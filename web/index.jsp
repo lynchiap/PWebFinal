@@ -16,7 +16,7 @@
     <body>
         <header>
             <div class="contenedor">
-                <!--prueba subida-->
+                <!--prueba subid no quiero a-->
 			<div class="logo">
 				<img src="http://dusseldorf.com.ar/wp-content/uploads/agencia-viajes2.jpg" width="200" height="60" >
 			</div>
