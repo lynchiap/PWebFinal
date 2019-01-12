@@ -14,47 +14,28 @@
 	<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
+      
+            <jsp:include page="ComponenteHeader.jsp"/>
             <div class="contenedor">
-                <!--prueba subid no quiero a-->
-			<div class="logo">
-				<img src="http://dusseldorf.com.ar/wp-content/uploads/agencia-viajes2.jpg" width="200" height="60" >
-			</div>
-			<span class ="login">
-				<li><a href="#"><span class ="icon-key"></span>Acceder</a></li>
-				<li><a href="#"><span class ="icon-pen"></span>Registrarse</a></li>
-			</span>
-			<nav class="menu">
-				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Paquetes de viaje</a></li>
-					<li><a href="#">Ofertas</a></li>
-					<li><a href="#">Inicio sesi&oacuten</a></li>
-					<li><a href="#">Contacto</a></li>
-				</ul>
-			</nav>
-		</div>
-        </header>
-        <div class="contenedor">
-			<div  class="grid-block" style="background-image: url('https://memoriasdeunviajesinretorno.files.wordpress.com/2014/12/airplane-taking-off-road-sky.jpg?w=1200')">
-            <form class="formulario-inicio" action="" method="post">			
-                <div>
-                    <label for="destino">Destino: </label>
-                    <!-- hay que cambiarlo a combobox -->
-                    <input type="text" id="destino"/>
-                </div>
-                <div>
-                    <label for="fecha">Fecha: </label>
-                    <input type="date" id="fecha"/> 
-                </div>
-                <div>
-                    <label for="noches">Nº noches: </label>
-                    <input type="number" id="noches" min ="1"/>
-                </div>
-                <div class="boton-inicio">
-                    <button type="submit">Buscar vuelos disponibles</button>
-                </div>
-            </form>
+                <div  class="grid-block" style="background-image: url('https://memoriasdeunviajesinretorno.files.wordpress.com/2014/12/airplane-taking-off-road-sky.jpg?w=1200')">
+                <form class="formulario-inicio" action="" method="post">			
+                    <div>
+                        <label for="destino">Destino: </label>
+                        <!-- hay que cambiarlo a combobox -->
+                        <input type="text" id="destino"/>
+                    </div>
+                    <div>
+                        <label for="fecha">Fecha: </label>
+                        <input type="date" id="fecha"/> 
+                    </div>
+                    <div>
+                        <label for="noches">Nº noches: </label>
+                        <input type="number" id="noches" min ="1"/>
+                    </div>
+                    <div class="boton-inicio">
+                        <button type="submit">Buscar vuelos disponibles</button>
+                    </div>
+                </form>
 			</div>
 			<p class = "line-height">
 			<h1>Más que vuelos</h1>
