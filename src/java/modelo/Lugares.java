@@ -13,16 +13,16 @@ public class Lugares {
     
     private String nombre;
     private int tasaAeropuerto;
-    private int tipo;
+    private boolean isOrigen;           // si es verdadero sera un lugar de origen si es falso es un lugar de destino
 
     public Lugares() {
 
     }
 
-    public Lugares(String nombre, int tasaAeropuerto, int tipo) {
+    public Lugares(String nombre, int tasaAeropuerto, boolean tipo) {
         this.nombre = nombre;
         this.tasaAeropuerto = tasaAeropuerto;
-        this.tipo =  tipo;            
+        this.isOrigen =  tipo;            
     }
 
     public String getNombre() {
@@ -41,11 +41,11 @@ public class Lugares {
         this.tasaAeropuerto = tasaAeropuerto;
     }
 
-    public int getTipo() {
-        return tipo;
+    public boolean isOrigen() {
+        return isOrigen;
     }
 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public void setOrigen(boolean tipo) {
+        this.isOrigen = tipo;
     }
 }

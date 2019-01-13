@@ -12,6 +12,7 @@ import java.sql.Date;
  * @author javi_
  */
 public class Vuelo {
+    private final int capacidad = 75;
     private int numeroAvion;
     private Date fecha;
     private int numeroPasajeros;
@@ -77,5 +78,9 @@ public class Vuelo {
 
     public void setDestino(Lugares destino) {
         this.destino = destino;
+    }
+
+    public int getCapacidad() {
+        return capacidad;
     }
 }

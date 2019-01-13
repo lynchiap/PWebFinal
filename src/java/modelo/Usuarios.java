@@ -10,25 +10,25 @@ package modelo;
  * @author javi_
  */
 public class Usuarios {
-    private int tipo;
     private String email;
     private String pass;
+    private boolean isAdmin;
 
     public Usuarios() {
     }
 
-    public Usuarios(int tipo, String email, String pass) {
-        this.tipo = tipo;
+    public Usuarios(String email, String pass,boolean isAdmin) {
+        this.isAdmin = isAdmin;
         this.email = email;
         this.pass = pass;
     }
 
-    public int getTipo() {
-        return tipo;
+    public boolean isAdmin() {
+        return isAdmin;
     }
 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public void setAdmin(boolean tipo) {
+        this.isAdmin = tipo;
     }
 
     public String getEmail() {

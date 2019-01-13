@@ -17,18 +17,26 @@ public class User{
     private String apellidos;
     private Date fechaNacimiento;
     private int numeroTelefono;
-    private ArrayList<Vuelo> vuelos;
+    private String dni;
+    private int numeroVisa;
+    private ArrayList<Billetes> billetes;
 
     public User() {
     }
 
-    public User(String nombre, String apellidos, Date fechaNacimiento, int numeroTelefono) {
+    public User(String nombre, String apellidos, Date fechaNacimiento, 
+            int numeroTelefono, String dni, int numeroVisa, ArrayList<Billetes> billetes) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fechaNacimiento = fechaNacimiento;
         this.numeroTelefono = numeroTelefono;
-        this.vuelos = new ArrayList<>();
+        this.dni = dni;
+        this.numeroVisa = numeroVisa;
+        this.billetes = billetes;
     }
+
+   
+
 
     public String getNombre() {
         return nombre;
@@ -62,15 +70,32 @@ public class User{
         this.numeroTelefono = numeroTelefono;
     }
 
-    public ArrayList<Vuelo> getVuelos() {
-        return vuelos;
+    public ArrayList<Billetes> getBilletes() {
+        return billetes;
     }
 
-    public void addVuelo(Vuelo vuelo) {
-        vuelos.add(vuelo);
+    public void addBillete(Billetes billete) {
+        billetes.add(billete);
     }
     
-    public int getnumeroVuelos(){
-        return vuelos.size();
+    public int getnumeroBilletes(){
+        return billetes.size();
     }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public int getNumeroVisa() {
+        return numeroVisa;
+    }
+
+    public void setNumeroVisa(int numeroVisa) {
+        this.numeroVisa = numeroVisa;
+    }
+    
 }
